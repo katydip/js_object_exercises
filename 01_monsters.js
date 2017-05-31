@@ -8,20 +8,15 @@
  * Create three LivingThing instances from your object, one for each of the creatures below.
  * Be sure to set each object's name and health!
  *
- * name: "Rat"
- * health: 5
+ * name: "Rat" health: 5
  *
- * name: "Goblin"
- * health: 30
+ * name: "Goblin" health: 30
  *
- * name: "Ogre"
- * health: 80
+ * name: "Ogre" health: 80
  *
  * Finally, add each of your objects to an array called "monsters"
- *
  * Use the following function documentation if you need a refresher on how objects with constructors are defined:
  * @see https://css-tricks.com/understanding-javascript-constructors/#article-header-id-1
- *
  *
  */
 
@@ -30,11 +25,19 @@
     //@see https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
     'use strict';
 
-    ///////////////////////////
-    // Put your code here!
-    ///////////////////////////
+    function LivingThing(name, health){
 
-    
+    this.name = name;
+    this.health = health;
+  }
+  let creature1 = new LivingThing("Rat", 5);
+  let creature2 = new LivingThing("Goblin", 30);
+  let creature3 = new LivingThing("Ogre", 80);
+
+  let monsters = [creature1, creature2, creature3];
+
+
+
     //The code below should work when you are done
     console.log("Monsters!");
 
@@ -58,7 +61,3 @@
     }
 
 })();
-    
-
-
-    
